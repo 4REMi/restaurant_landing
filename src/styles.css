@@ -98,7 +98,7 @@ html, body {
 
   .imgContainer_ourStory{
 
-    background-image: url('/src/pic4.jpg');
+    background-image: url('src/pic4.jpg');
     width: 600px;
     height: 600px;
     background-size: cover;
@@ -344,7 +344,7 @@ html, body {
 
 
 .imgCover{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('/src/bigpic.JPG');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('src/bigpic.JPG');
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -358,7 +358,7 @@ html, body {
 
 
 .imgContainer_menu{
-    background-image: url('/src/pic3.JPG');
+    background-image: url('src/pic3.JPG');
     width: 600px;
     height: 600px;
     background-size: cover;
@@ -451,7 +451,7 @@ html, body {
 }
 
 .imgContainer_hrs{
-    background-image: url('/src/pic1.JPG');
+    background-image: url('src/pic1.JPG');
     width: 600px;
     height: 600px;
     background-size: cover;
