@@ -1,0 +1,603 @@
+@font-face {
+    font-family: 'Raspberie';
+    src: url('/src/Raspberie.ttf') format('truetype'); /* Adjust the path as necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/src/Poppins-Regular.ttf') format('truetype'); /* Adjust the path as necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%; /* Make sure the body takes full viewport height */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Example font */
+}
+
+#location {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.nav {
+    background-color: #1c2c59; /* Navy blue background */
+    padding: 10px 20px; /* Padding around the navigation */
+    text-align: center; /* Center the buttons */
+    font-family: 'Poppins';
+}
+
+.columnHero{
+    font-family: 'Poppins';
+}
+
+.heroSections{
+    background-color: #2c3263;
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.navBtn {
+    background-color: transparent; /* Transparent background for buttons */
+    font-family: 'Poppins';
+    border: none; /* No borders on buttons */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for the buttons */
+    margin: 0 10px; /* Space between buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navBtn:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+    border-radius: 26px;
+}
+
+.hero-section1 {
+    height: 85vh; /* Make hero section fill the height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center contents */
+    align-items: center; /* Horizontally center contents */
+    background: #f5f3ec; /* Light blue background */
+    font-family: 'Raspberie';
+}
+
+.hero-section2 {
+    height: 85vh; /* Make hero section fill the height of the viewport */
+    width: 70%;
+
+}
+
+#btn_Hrs, #btn_Story{
+    margin-left: 20px;
+}
+
+#ourStoryCopy{
+    max-width: 600px; /* Set your desired max width */
+    margin: 0 auto; /* Center the text container */
+    text-align: justify; /* Optional: Justify the text for better alignment */
+    line-height: 1.6; /* Optional: Improve readability by adjusting line height */
+}
+
+.video-background {
+    position: relative;
+    width: 100%; /* Set the width of the container */
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+
+  .imgContainer_ourStory{
+
+    background-image: url('/src/pic4.jpg');
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 26px;
+
+  }
+
+  .asSeen{
+    margin-top: 30px;    
+    display: flex;
+    background-color:#1C2C59;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: 40px;
+  }
+
+  .logosIpsum{
+    width: 20%;
+  }
+
+  .logosContainer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #asSeenHP{
+    display: flex;
+    background-color:#1C2C59;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: 40px;
+    gap: 200px;
+  }
+
+  
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Keep the video behind other content */
+  }
+  
+  .video-background .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the video */
+    color: #000000; /* Adjust text color for visibility */
+    text-align: center;
+  }
+  
+
+.container {
+    width: 80%; /* Example width, adjust as necessary */
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    color: #333; /* Dark grey text for contrast */
+    font-family: 'Raspberie';
+}
+
+.container1 {
+    flex: 0 0 auto; /* Do not grow or shrink, use auto height */
+    font-size: 24px; /* Larger text for the main container */
+    font-family: 'Raspberie';
+    text-transform: uppercase;
+    color: #1c2c59;
+    font-size: 40px;
+    padding: 0px;
+    text-align: center;
+}
+
+.container2 > * {
+    flex: 0 0 auto; /* Do not grow or shrink, use auto height */
+    width: 30%; /* Take full width of the hero section */
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-align: center;
+    color: #1c2c59;
+    font-size: 20px;
+}
+
+.btnContainer{
+    margin-top: 30px;
+}
+/* Other styles remain the same */
+
+
+.btn {
+    color: #1C2C59;
+  background-color: rgba(0,0,0,0);
+  border-color: #1C2C59;
+  font-size: 15px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn:hover {
+    color: #ffffff;
+  background-color: #bfad27;
+  border-color: #1C2C59;
+  font-size: 15px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.column {
+    flex: 1; /* Each column takes equal width */
+    padding: 20px; /* Spacing inside columns */
+    text-align: center; /* Center text horizontally */
+    background: #f5f3ec; /* Example background color for columns */
+    border-right: 2px solid white; /* White border between columns */
+    font-family: 'Raspberie';
+}
+
+.column:last-child {
+    border-right: none; /* Remove border for the last column */
+    font-family: 'Raspberie';
+}
+
+.logocontainer{
+    width: 50px;
+    height: 50px;
+}
+
+
+.separator {
+    width: 4px;
+    height: 30px;
+    background-color: #bfad27; /* Adjust color as needed */
+    margin: 0 10px;
+}
+
+.heroContainer{
+    display: flex;
+}
+
+.iconContainer{
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.infoHeader{
+    font-family: 'Raspberie';
+    text-transform: uppercase;
+    color: #1c2c59;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.twoColumns{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f3ec;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url('/src/bgPattern.svg');
+  /* Ensure the background covers the entire section */
+  background-size: cover;
+  /* Set the background to be fixed */
+  background-attachment: fixed;
+  
+}
+
+#MenuMiniSection{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 90px;
+
+}
+
+.aboutUs{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #1c2c59;
+    font-size: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+
+}
+
+#logo{
+    width: 100px;
+
+}
+
+.statementContainer{
+    background-color: #1C2C59; /* the dark blue color */
+    color: white; /* text color */
+    font-size: 25px; /* adjust to your desired font size */
+    text-transform: uppercase;
+    text-align: center; /* centers the text horizontally */
+    border-radius: 0px; /* rounded corners, adjust as needed */
+    margin: 20px; /* space around the container, adjust as needed */
+    padding: 55px;
+    font-family: 'Raspberie';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.imgCover{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('/src/bigpic.JPG');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+
+
+.imgContainer_menu{
+    background-image: url('/src/pic3.JPG');
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 26px;
+
+}
+
+
+
+.infoCopy {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #1c2c59;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.storyQuote{
+    font-family: 'Raspberie';
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.storyAuthor{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.OurStoryContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1C2C59;
+    justify-content: center; /* Vertically center contents */
+    align-items: center; 
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.followSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raspberie';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 0px;
+    text-align: center;
+
+}
+
+.singleColumn > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hrsNLoc{
+    background-color: #000;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+
+
+.starContainer{
+    color: #bfad27;
+}
+
+.imgContainer_hrs{
+    background-image: url('/src/pic1.JPG');
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-color: #1C2C59;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 26px;
+    
+    
+}
+
+.infoContainer{
+    background-color: white;
+    padding: 22px;
+    border-style: solid;
+    border-radius: 26px;
+    border-width: 2px;
+    border-color: #1c2c59;
+}
+
+#HoursHeader{
+    padding-top: 30px;
+    font-family: 'Raspberie';
+    color: #1c2c59;
+
+}
+
+
+.hours-section {
+    background-color:  #dfe5e6; /* Light blue background */
+    ; /* Adjust the background color as needed */
+    color: #000; /* Adjust the text color as needed */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 26px;
+
+    clip-path: polygon(
+        0% 10%, 5% 5%, 10% 10%, 15% 5%, 20% 10%, 25% 5%, 
+        30% 10%, 35% 5%, 40% 10%, 45% 5%, 50% 10%, 55% 5%, 
+        60% 10%, 65% 5%, 70% 10%, 75% 5%, 80% 10%, 85% 5%, 
+        90% 10%, 95% 5%, 100% 10%, 100% 100%, 0% 100%
+      );
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" preserveAspectRatio="none"><path d="M 0 10 Q 2.5 0, 5 10 Q 7.5 0, 10 10" stroke="black" fill="transparent"/></svg>') 30 stretch;
+}
+
+.hours-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 18px;
+    margin: auto;
+    max-width: 300px; /* Adjust width as needed */
+    color: #1c2c59;
+}
+
+
+.grid-container > * {
+    font-family: 'Poppins';
+}
+
+.grid-container div {
+    padding: 5px;
+
+}
+
+.menu-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.menu-item {
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 1px dashed #444;
+    padding: 10px 0;
+    color: #1c2c59;
+}
+.price {
+    float: right;
+}
+.description {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+#menuCopy,#menuHeader{
+    padding: 0px;
+
+}
+
+#menuCopy{
+    padding-bottom: 20px;
+}
+.button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.footer {
+    background-color: #1C2C59;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+
