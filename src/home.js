@@ -1,10 +1,12 @@
+
+
 function displayHome (){
     const HomeContent = document.createElement('div');
     HomeContent.innerHTML = `
 
     <div class="heroContainer">
     <div class="hero-section1">
-        <div class="logocontainer"><img src="src/lasagna-svgrepo-com.svg" alt=""></div>
+        <div class="logocontainer"><img src="./lasagna" alt=""></div>
         <div class="container container1">
             <h1 class="heroSec">Remi's Dearest</h1>
         </div>
@@ -23,7 +25,7 @@ function displayHome (){
     <div class="hero-section2">
        <div class="imgHero"><div class="video-background">
         <video autoplay muted loop playsinline>
-          <source src="src/videoHero.mp4" type="video/mp4">
+          <source src="./videoHero.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video></div>
         </div></div>
@@ -39,7 +41,7 @@ function displayHome (){
 
 <div class="twoColumns">
     <div class="infoContainer">
-        <div class="iconContainer" id="location"><img src="/src/location.png" alt=""></div>
+        <div class="iconContainer" id="location"><img src="./location.png" alt=""></div>
         <h1 class="infoHeader">Hours & Location</h1>
         <hr style="border-top: 1px dotted black;">
         <div class="infoCopy">Want to pay us a visit? <br> Know about our hours and where to find us. <br>Make sure you order our Lorem Ipsum.</div>
@@ -69,10 +71,10 @@ function displayHome (){
     <div class="asSeen" id="asSeenHP">
         <div class="asseentext"> As seen on. </div>
         <div class="logosContainer">
-            <img src="src/logo1.svg" alt="logo1" class="logosIpsum">
-            <img src="src/logo2.svg" alt="logo2" class="logosIpsum">
-            <img src="src/logo3.svg" alt="logo3" class="logosIpsum">
-            <img src="src/logo4.svg" alt="logo3" class="logosIpsum">
+            <img src="./logo1.svg" alt="logo1" class="logosIpsum">
+            <img src="./logo2.svg" alt="logo2" class="logosIpsum">
+            <img src="./logo3.svg" alt="logo3" class="logosIpsum">
+            <img src="./logo4.svg" alt="logo3" class="logosIpsum">
         </div>
     </div>
 </div>

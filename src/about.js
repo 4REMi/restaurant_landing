@@ -11,7 +11,7 @@ function displayAbout (){
 
     <div class="twoColumns">
         <div class="infoContainer">
-            <div class="iconContainer" id="location"><img src="src/location.png" alt=""></div>
+            <div class="iconContainer" id="location"><img src="./location.png" alt=""></div>
             <h1 class="infoHeader">Our Story</h1>
             <hr style="border-top: 1px dotted black;">
             <div class="infoCopy" id="ourStoryCopy">Our journey started in 1985 when James, a steak lover, explored various recipes from across the world and brought them together in our menu. Ever since we are now a team of 10 expert chefs from 3 top cities in India serving you the best steaks, desserts and mocktails in town. </div>
@@ -21,9 +21,9 @@ function displayAbout (){
             <div class="asSeen">
                 <div class="asseentext"> As seen on. </div>
                 <div class="logosContainer">
-                    <img src="src/logo1.svg" alt="logo1" class="logosIpsum">
-                    <img src="src/logo2.svg" alt="logo2" class="logosIpsum">
-                    <img src="src/logo3.svg" alt="logo3" class="logosIpsum">
+                    <img src="./logo1.svg" alt="logo1" class="logosIpsum">
+                    <img src="./logo2.svg" alt="logo2" class="logosIpsum">
+                    <img src="./logo3.svg" alt="logo3" class="logosIpsum">
                 </div>
             </div>
 

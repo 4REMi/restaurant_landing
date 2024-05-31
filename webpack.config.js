@@ -21,17 +21,16 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: '[name][ext]'  // Remove the hash part if it was previously included
+        }
       },
       {
-        test: /\.(png|jpg|gif|webp)$/, // Add .webp to the list of supported image formats
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
+        test: /\.(png|jpg|jpeg|gif|svg|webp|PNG|JPG|JPEG|GIF|SVG|WEBP)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: '[name][ext]'  // Remove the hash part if it was previously included
+        }
       },
       {
         // Rule for video files
@@ -40,22 +39,11 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[path][name].[hash].[ext]',
-              outputPath: 'videos/'  // Videos will be outputted in a "videos" folder
+              name: '[name].[ext]',
+              outputPath: '/'  // Videos will be outputted in a "videos" folder
             }
           }
         ]
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
       }
     ]
   }

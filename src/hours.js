@@ -8,7 +8,7 @@ function displayHours (){
     </div>
     <div class="twoColumns">
         <div class="infoContainer">
-            <div class="iconContainer" id="location"><img src="src/location.png" alt=""></div>
+            <div class="iconContainer" id="location"><img src="./location.png" alt=""></div>
             <h1 class="infoHeader">Hours & Location</h1>
             <hr style="border-top: 1px dotted black;">
             <div class="infoCopy">Want to pay us a visit? <br> Know about our hours and where to find us. <br>Make sure you order our Lorem Ipsum.</div>
